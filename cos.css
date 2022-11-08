@@ -1,0 +1,123 @@
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    body{
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .navbar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color:#212529 ;
+      color:white;
+      padding: 25px 60px;
+      margin-bottom: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #f1f1f1;
+      }
+
+      .cart{
+        position: relative;
+        background-color: #f1f1f1;
+        color: #212529;
+        padding: 5px;
+        font-size: 30px;
+        border-radius: 4px;
+      }
+
+      .text-cart{
+        position: right;
+        padding: 5px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .cartAmount{
+        position: absolute;
+        top: -15px;
+        right: -10px;
+        font-size: 16px;
+        background-color: red;
+        color: #f1f1f1;
+        padding: 3px;
+        border-radius: 3px;
+        white-space: nowrap;
+      }
+
+      footer {
+        font-family: sans-serif;
+        padding: 25px 60px;
+        padding: 3px;
+        text-align: center;
+        background-color: #212529 ;
+        color: white;
+        height: 100;
+      }
+
+      .shop{      
+        display:grid;
+        grid-template-columns: repeat(1, 320px);
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .item{
+        border: 2px #212529;
+      }
+
+      @media (max-width:1000px){
+        .shop{
+        grid-template-columns: repeat(2, 223px);
+        }
+      }
+
+      @media (max-width:500px){
+        .shop{
+        grid-template-columns: repeat(1, 223px);
+        }
+      }
+
+      .butoane{
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+                  
+      }
+
+      header{
+        flex: 1;
+                height: 100%;
+              font-size: 15px;
+                  background-image:url(farmaciee2.jpg) ;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  padding: 600px, 500px;
+                  background-size: cover;
+      }
+
+      hr{
+        width: 66%;
+        float: right;
+        margin-right: 5%;
+       }
+
+       .checkout{
+        float: right;
+        margin-right: 5%;
+        width: 28%;
+       }

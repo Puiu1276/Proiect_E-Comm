@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cos de cumparaturi</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="Proiect_Comert.html">
+                <h1>Farmacie online</h1>
+            </a>
+            <a href="cos html" class="cos html"></a>
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+                <div class="cartAmount">0</div> <!-- icon-ul cart o sa fie 0* -->
+                
+            </div>
+            </a>
+        </div>
+
+        <div id="label" class="text-center"></div>
+        <div class="shopping-cart" id="shopping-cart"></div>
+
+        <div class="shop" id="shop">
+            <div class="item">
+                <img src="nurofen.jpg" width="200" alt="">
+                <h1 class=”title”>Nurofen</h1>
+                <div class="butoane">
+                    
+                    <button class="button" onclick="downqty(1, 50)" >-</button>
+                    <div class="qty1">1</div>
+                    <button class="button"  onclick="upqty(1,50)">+</button>
+                    <div class="total1">50lei</div>
+                    <!-- <span id="remove" i class="bi bi-file-excel"></span>  -->
+                    <button class="remove" onclick="remove">X</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="item">
+                <img src="melatonina.jpg" width="200" alt="">
+                <h1 class=”title”>Melatonina</h1>
+                <div class="butoane">
+                    <button class="button" onclick="downqty(2, 40)">-</button>
+                    <div class="qty2">1</div>
+                    <button class="button" onclick="upqty(2,40)">+</button>
+                    <div class="total2">40lei</div>
+                    <button class="remove">X</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="item">
+                <img src="algocalmin.jpg" width="200" alt="">
+                <h1 class=”title”>Algocalmin</h1>
+                <div class="butoane">
+                    <button class="button" onclick="downqty(3, 60)">-</button>
+                    <div class="qty3">1</div>
+                    <button class="button" onclick="upqty(3,60)">+</button>
+                    <div class="total3">60lei</div>
+                    <button class="remove">X</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        </div>
+        </div>
+        <hr>
+        <div class="procesare">
+            <div class=”total” onclick="updateCartTotal()">Total:</div>           
+            <button class=”checkout”>Checkout</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <br>
+            <p>Autor: Ghionea Alexandru-Andrei<br>
+                <a href="alexghionea1276@gmail.com">alexghionea1276@gmail.com</a>
+            </p>
+            <br>
+            <br>
+        </footer>
+        <script src="cos.js"></script>
+    </header>
+</body>
+
+</html>
